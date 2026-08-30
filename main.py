@@ -11,7 +11,7 @@ if "GOOGLE_API_KEY" not in os.environ:
     st.stop()
 
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-3.6-flash")
 
 GENERIC_HYPOS = {
     "Commodity Trap": [
